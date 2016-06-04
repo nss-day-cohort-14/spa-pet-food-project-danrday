@@ -33,7 +33,7 @@ myCatRequest.addEventListener('load', function(){
 });
 myCatRequest.addEventListener("load", parseAfterLoaded);
 myCatRequest.addEventListener("error", executeThisIfXHRFails);
-myCatRequest.open("GET", "catFood.json");
+myCatRequest.open("GET", "catfood.json");
 myCatRequest.send();
 
 //XHR request for dog food
