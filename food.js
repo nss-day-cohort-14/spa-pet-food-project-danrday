@@ -1,5 +1,4 @@
 function parseAfterLoaded() {
-  selectedDiv; //loads selectedDiv into memory before it changes value
   var data = JSON.parse(event.target.responseText);   //get and parse JSON data file
   var newHTML = "";  //newHTML will be the final result added to the DOM
 
@@ -37,12 +36,14 @@ myCatRequest.open("GET", "catFood.json");
 myCatRequest.send();
 
 //XHR request for dog food
-var myRequest = new XMLHttpRequest();
-myRequest.addEventListener('load', function(){
-  selectedDiv = document.getElementById("dogFood");
-});
-myRequest.addEventListener("load", parseAfterLoaded);
-myRequest.addEventListener("error", executeThisIfXHRFails);
-myRequest.open("GET", "food.json");
-myRequest.send();
+if (selectedDiv.innerHTML !== "") {
+  var myRequest = new XMLHttpRequest();
+  myRequest.addEventListener('load', function(){
+    selectedDiv = document.getElementById("dogFood");
+  });
+  myRequest.addEventListener("load", parseAfterLoaded);
+  myRequest.addEventListener("error", executeThisIfXHRFails);
+  myRequest.open("GET", "food.json");
+  myRequest.send();
+}
 
