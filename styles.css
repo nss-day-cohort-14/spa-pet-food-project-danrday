@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #d3d3d3;
+  font-family: Sans-Serif;
+}
+
+#mainContainer {
+  /*background-color: #9fdfb0;*/
+  /*height: 480px;*/
+  width: 830px;
+  margin: auto;
+  margin-top: 2.8%;
+  border-radius: 3px;
+}
+
+.bold {
+  font-weight: bold;
+  /*display: inline;*/
+  font-style: italic;
+  background-color: orange;
+}
+
+.bolder {
+  font-weight: bolder;
+  font-size: 22px;
+  color: #000080;
+  display: inline;
+}
+
+.price {
+  font-weight: bolder;
+  font-size: 22px;
+  color: blue;
+  /*display: inline;*/
+}
+
+.breed {
+  font-weight: bolder;
+  font-size: 26px;
+  color: red;
+  background-color: yellow;
+  /*display: inline;*/
+}
+
+
+.brand {
+  font-weight: bolder;
+  font-size: 23px;
+  color: #FFFFFF;
+  display: inline;
+  background-color: green;
+  border-radius: 10px;
+  border: 5px dotted orange;
+}
+
+#dogFood {
+  background-color: #9fdfb0;
+  border-radius: 30px;
+  width: 30%;
+  float: left;
+  box-shadow: 10px 10px 5px #888888;
+  padding-left: 20px;
+}
+
+#catFood {
+  background-color: #9fdfb0;
+  border-radius: 30px;
+  width: 30%;
+  display: inline-block;
+   box-shadow: 10px 10px 5px #888888;
+   margin-left: 15px;
+   padding-left: 20px;
+}
+
+h3 {
+  font-size: 27px;
+  color: #BF5FFF;
+}

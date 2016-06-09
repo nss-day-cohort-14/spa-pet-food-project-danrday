@@ -9,8 +9,24 @@ function parseAfterLoaded() {
   function breakDownJSON (y) {
     for (var x in y) {
       var newVar = y[x];
-      if (newVar.constructor !== Array && newVar.constructor !== Object) {
-        newHTML += `<p>${x}: ${newVar}</p>`;
+
+      if (x === "breed") {
+        newHTML += `<p class="breed">${newVar}</p>`;
+      }
+      else if (x === "type") {
+        newHTML += `<p class="bold">${newVar}</p>`;
+      }  
+      else if (x === "name") {
+        newHTML += `<p class="bolder">${newVar}</p>`;
+      }
+       else if (x === "price") {
+        newHTML += `<p class="price">$${newVar}</p>`;
+      }
+      else if (x === "Brand") {
+        newHTML += `<p class="brand">${newVar}</p>`;
+      }
+       else if (newVar.constructor !== Array && newVar.constructor !== Object) {
+        newHTML += `<p><p class="bold">${x}:</p> ${newVar}</p>`;
       } else {
           breakDownJSON(newVar);
         }

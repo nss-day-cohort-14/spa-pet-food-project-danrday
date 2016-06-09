@@ -1,7 +1,7 @@
 {
-  "dog_brands": [
+  "Dog Brands": [
     {
-      "name": "Chuck wagon",
+      "Brand": "Chuck wagon",
       "types": [
         {
           "type": "all_natural",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "name": "Purina",
+      "Brand": "Purina",
       "types": [
         {
           "type": "puppy",
